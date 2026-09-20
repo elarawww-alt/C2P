@@ -1,12 +1,12 @@
-header{
+    header{
     display: flex;
     text-align: center;
-    background-color: rgb(0, 81, 255); 
+    background-color: rgb(21, 53, 122); 
     width: 100% ;
     padding: 0px;
       }
 
-      nav a {
+    nav a {
     display: flex;
     justify-content: center;
     text-decoration: none; /*enlève le surlignement*/
@@ -27,8 +27,66 @@ header{
       } /*pour mettre les liens sur une ligne
       0 haut et bas et 20px gauche et droite */
 
-      body{
+    body{
         margin: 0;
         padding: 0;
-      }
+        background-image: url('images/img.jpg.jpeg');
+        display: flex;  
+        flex-direction: column; /*aligne le main et le footer*/
+        min-height: 100vh; /*occupe la hauteur de toute la fenêtre*/
       /*pour avoir la barre rempli*/
+          }
+  
+
+    footer{
+        display: flex;
+        background-color: rgb(21, 53, 122); 
+        padding: 8px;
+    
+          }
+
+          .actions.container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 16px; /*espace entre les deux boutons*/
+
+          }
+
+          /*style commun aux deux*/
+          /* Style de base commun aux deux boutons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px; /* Coins légèrement arrondis */
+  transition: all 0.3s ease; /* Animation fluide au survol */
+}
+
+/* Style du 1er carré : "Rejoindre la communauté" */
+.btn-primary {
+  background-color: #0d1b2a; 
+  color: #ffffff;         
+  border: 1px solid #0d1b2a;
+}
+    
+/*pour le second carré*/
+.btn-secondary{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #0d1b2a;
+  border: 1px solid #0d1b2a;
+  backdrop-filter: blur(4px);
+}
+ /*effet survol de la souris hover*/
+.btn-primary: :hover{
+  background-color: #1b263b;
+  border-color: #1b263b;
+}
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+
+}
